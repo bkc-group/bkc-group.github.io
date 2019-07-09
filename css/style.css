@@ -1129,3 +1129,19 @@ h1, h2, h3, h4, h5,
 .events-content li{
   max-width: 2000px !important;
 }
+
+.Linkedin{
+  color: #4875B4
+}
+
+.hidden{
+  display: none;
+}
+
+.paddingTop40px{
+  padding-top: 40px
+}
+
+.feature-1 .feature-1-content{
+  min-height: 250px;
+}
