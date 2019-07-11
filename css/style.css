@@ -1141,7 +1141,19 @@ h1, h2, h3, h4, h5,
 .paddingTop40px{
   padding-top: 40px
 }
-
+.paddingTop10px{
+  padding-top: 10px
+}
+.marginTop10px{
+  margin-top: 10px;
+}
+.marginTop34px{
+  margin-top: 34px;
+}
+.paper{
+  margin-bottom: 30px;
+  width: 18rem;
+}
 .feature-1 .feature-1-content{
   min-height: 250px;
 }
