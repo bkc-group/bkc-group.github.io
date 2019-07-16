@@ -1088,7 +1088,7 @@ h1, h2, h3, h4, h5,
     stroke-dashoffset: -136px; } }
 
 .events-content{
-  min-height: 200px !important;
+  min-height: 250px !important;
 }
 
 .title:not(:last-child), .subtitle:not(:last-child){
