@@ -616,7 +616,7 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 4rem 0; }
+  padding: 6rem 0; }
   .section-bg.style-1 {
     position: relative; }
     .section-bg.style-1:before {
@@ -1160,4 +1160,13 @@ h1, h2, h3, h4, h5,
 
 .members{
   margin-bottom: 30px;
+}
+
+.keysMembers{
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.lead {
+  padding-bottom: 10px;
 }
