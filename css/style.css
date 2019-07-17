@@ -603,6 +603,7 @@ h1, h2, h3, h4, h5,
     color: #51be78; }
 
 .section-title-underline {
+  padding-top: 20px;
   color: #000; }
   .section-title-underline span {
     display: inline-block;
@@ -1096,8 +1097,9 @@ h1, h2, h3, h4, h5,
 }
 
 .divider.is-centered{
-  margin: auto !important;
+  margin-top: 30px !important;
 }
+
 
 .footer{
   background-color: #183661 !important;
