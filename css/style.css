@@ -1239,3 +1239,14 @@ h4{
 .max-with60px{
   max-width: 60px;
 }
+
+#preview{
+  padding-top: 100px;
+}
+
+image{
+  display: block;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 50%;
+}
