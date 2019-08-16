@@ -1241,12 +1241,19 @@ h4{
 }
 
 #preview{
+  margin-left: 2rem !important;
   padding-top: 100px;
 }
 
-image{
-  display: block;
-  margin-left: 100px;
-  margin-right: 100px;
+#preview img{
+  padding-right:  20px !important;
   width: 50%;
+  
+  /* text-align: center; */
+  /* max-width: 400px ; */
+  max-height: 400px !important;
+}
+
+
+p {
 }
