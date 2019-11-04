@@ -12,7 +12,7 @@
 
             // Windows Phone must come first because its UA also contains "Android"
             if (/windows phone/i.test(userAgent)) {
-            return "Windows Phone";
+                alert("Please open in your phone!")
             }
 
             if (/android/i.test(userAgent)) {
@@ -26,6 +26,8 @@
             }
 
             window.location = "bcontract://";
+            setTimeout(function () { alert("Please open in your phone!") }, 500);
+
             // window.open("bcontract://");
         </script>
     </body>
