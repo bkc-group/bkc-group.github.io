@@ -5,10 +5,26 @@
     <base href="https://www.quackit.com/javascript/" target="_blank">
     </head>
     <body>
-            <a href="bcontract://">Launch BContact App</a><br/>
+            <a href="bcontract://">Launch Bcontract App</a><br/>
 
         <script>
-            setTimeout(function () { window.location = "https://itunes.apple.com"; }, 200);
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+            return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                setTimeout(function () { window.location = "https://play.google.com/store/apps/details?id=com.bcontract"; }, 200);
+            }
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                setTimeout(function () { window.location = "https://itunes.apple.com"; }, 200);
+
+            }
+
             window.location = "bcontract://";
             // window.open("bcontract://");
         </script>
