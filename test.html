@@ -5,9 +5,12 @@
     <base href="https://www.quackit.com/javascript/" target="_blank">
     </head>
     <body>
-            <a href="bcontract://bcontract" data-applink="bcontract://">Launch Bcontract App</a><br/>
-            <span>v1.1.7</span>
+            <a  class="openApp" href="bcontract://bcontract" data-applink="bcontract://">Launch Bcontract App</a><br/>
+            <span>v1.1.8</span>
         <script>
+            $(function(){
+                $('.openApp').trigger('click');
+            });
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
             // Windows Phone must come first because its UA also contains "Android"
