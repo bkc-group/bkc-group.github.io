@@ -11,9 +11,9 @@
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
             // Windows Phone must come first because its UA also contains "Android"
-            if (/windows phone/i.test(userAgent)) {
-                alert("Please open in your phone!")
-            }
+            // if (/windows phone/i.test(userAgent)) {
+            //     alert("Please open in your phone!")
+            // }
 
             if (/android/i.test(userAgent)) {
                 setTimeout(function () { window.location = "market://details?id=com.bcontract"; }, 200);
