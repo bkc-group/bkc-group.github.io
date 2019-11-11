@@ -1,0 +1,42 @@
+<DOCTYPE html>
+    <html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Bcontract App</title>
+    <base href="https://www.quackit.com/javascript/" target="_blank">
+    </head>
+    <body>
+            Nếu ứng dụng không tự động khởi động hãy ấn nút:
+            <a  class="openApp" href="bcontract://bcontract" data-applink="bcontract://"><button type="button" class="btn btn-primary">Launch Bcontract App </button></a><br/>
+            <span>v1.1.12</span>
+
+            <div>
+        <script>
+          
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Windows Phone must come first because its UA also contains "Android"
+            // if (/windows phone/i.test(userAgent)) {
+            //     alert("Please open in your phone!")
+            // }
+
+            if (/android/i.test(userAgent)) {
+                setTimeout(function () { window.location = window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.bcontract" }, 1000);
+            }
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                setTimeout(function () { window.location = "https://itunes.apple.com"; }, 200);
+
+            }
+
+            window.location = "bcontract://bcontract";
+            // setTimeout(function () { alert("Please open in your phone!") }, 500);
+
+            window.open("bcontract://");
+        </script>
+    </body>
+    </html>
