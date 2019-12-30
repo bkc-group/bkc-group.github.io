@@ -839,6 +839,12 @@ h1, h2, h3, h4, h5,
 .owl-slide .owl-nav {
   display: none; }
 
+@media (max-width: 767.98px) {
+  .feature-1 {
+    margin-bottom: 50px !important;
+  }
+}
+
 .feature-1 .icon-wrapper, .person .icon-wrapper {
   position: relative;
   width: 96px;
