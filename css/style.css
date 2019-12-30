@@ -1268,6 +1268,26 @@ h4{
   padding: 20px;
 }
 
-.carousel-caption .h5 {
-  
+@media (min-width: 768px) {
+  .carousel-caption {
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .carousel-caption {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 576px){
+  .carousel-caption {
+    min-height: 375px;
+  }
+}
+
+@media (max-width: 350px){
+  .carousel-caption {
+    min-height: 430px;
+  }
 }
